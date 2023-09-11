@@ -81,28 +81,36 @@
 }
 
 /*USERS*/
-.user__sessions__new{
+
+/*Login Users*/
+.user__sessions__new, .user__registrations__new{
     background-color: azure;
     height: 100vh;
     padding-left: 600px;
     padding-top: 25vh;
 }
-.user__sessions__new input{
-   height: 30px;
-   border-radius: 5px;
+.user__sessions__new input , .user__registrations__new input{
+   height: 40px;
+   border-radius: 8px;
    border-style: groove;
 }
 
+/*Todos os campos(e-mail, usuário, senha) de login e de cadastro são afetados por essa configuração*/
 .field input{
     padding: 10px;
 }
-
-.login{
+/*Titulos da=s páginas de login(sign_in) e cadastro(sign_up)*/
+.login, .cadastro{
     font-family: 'Courier New', Courier, monospace;
 }
 
-.login__button{
-    width: 200px;
+.login__button,  .sign_up__button{
+    width: 205px;
     margin-bottom: 20px;
+}
+
+/*Class do campo do botão de sign_up(users/registrations/new...)*/
+.actions{
+    padding-top: 20px;
 }
 
