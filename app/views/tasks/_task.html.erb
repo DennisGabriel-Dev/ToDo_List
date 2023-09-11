@@ -1,7 +1,10 @@
 <div id="<%= dom_id task %>">
   <p>
     <strong>
-      <%= task.title %>
+      <%= form_with(model: task) do |form| %>
+      <%= form.check_box :status, :class=> "check_box"%>
+      <% end %><%= task.title %>
+      
     </strong>
   </p>
 

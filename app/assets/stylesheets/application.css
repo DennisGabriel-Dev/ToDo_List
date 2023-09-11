@@ -28,22 +28,50 @@
 
 .link__show__task, .link__new__task{
     color: white;
+    text-decoration: none;
 }
 
 
 .tasks__index__scope{
-    height: 100vh;
+    background-color: rgb(203, 157, 255);
+    height: 100%;
 }
 
-.task{
+.header__index__tasks{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header__index__tasks button{
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
 }
 
 #tasks{
     margin-top: 50px;
     margin-left: 100px;
     font-size: 24px
+}
+
+.content__task{
+    display: flex;
+    flex-direction: row;
+}
+
+.item__task{
+    padding-right: 30px;
+}
+
+.item__task button{
+    background: transparent;
+    border: none;
+    background-image: url(/ToDo_List/app/assets/images/delete.png);
 }
 
 .title__task{
@@ -55,31 +83,53 @@
     margin-left: 35vw;
 }
 
-.delete__button{
-    background-image: url(/ToDo_List/app/assets/images/delete.png);
-}
 
 /* TASKSSHOW */
 .tasks__show{
-    background-color: rgb(165, 165, 165);
+    background-color: rgb(203, 157, 255);
     height: 100vh;
     font-size: 24px;
-    padding-top: 150px;
-    padding-left: 100px;
+    padding-top: 35vh;
+    padding-left: 40vw;
 }
 
 .show__edit__button, .show__back__buttton{
     text-decoration: none;
     color: rgb(26, 14, 0);
+    padding: 10px;
 }
 
 .show__delete__button{
+    margin-top: 10px;
     background-color: rgb(236, 214, 195);
     font-size: 18px;
     border-radius: 6px;
     border: 5px;
+    padding: 10px;
+    width: 250px;
 }
 
+
+/*TASK NEW*/
+.tasks__new__title{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container__new__tasks{
+    padding-left: 40vw;
+    padding-top: 30vh;
+    background-color: rgb(203, 157, 255);
+    height: 100vh;
+}
+
+.form__new__title__task{
+    padding-bottom: 20px;
+}
+
+.form__title__field{
+    border-radius: 8px;
+    padding: 5px;
+}
 /*USERS*/
 
 /*Login Users*/
@@ -113,4 +163,3 @@
 .actions{
     padding-top: 20px;
 }
-
