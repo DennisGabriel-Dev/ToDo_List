@@ -9,7 +9,7 @@
       <h1 class="title__index__tasks">Tasks</h1>
       <%= button_to "logout", destroy_user_session_path, method: :delete %>
     </header>
-    <div class="btn btn btn-secondary btn-lg new__task">
+    <div class="btn btn btn-success btn-lg new__task">
       <%= link_to "Nova task", new_task_path, :class => "link__new__task"%>
     </div>
 
@@ -18,7 +18,7 @@
         <%= render task %>
         <div class="content__task">
           <div class="text-white item__task">
-            <%= link_to "Mostrar a task 📄", task ,  :class => "link__show__task btn btn-success"%>
+            <%= link_to "Mostrar a task 📄", task ,  :class => "link__show__task btn btn-primary"%>
           </div>
           <div class="item__task btn btn-danger text-white">
             <%= button_to 'Apagar 🗑️', task, :class => "text-white",method: :delete %>

@@ -111,6 +111,7 @@
 
 
 /*TASK NEW AND TASK EDIT*/
+/*Beside of new and edit task, this class is using in title of users/passwords/new */
 .tasks__new__title{
     font-family: 'Courier New', Courier, monospace;
 }
@@ -164,4 +165,19 @@
 /*Class do campo do botão de sign_up(users/registrations/new...)*/
 .actions{
     padding-top: 20px;
+}
+
+
+/* Password Forgot*/
+.forgot__password__view{
+    background-color: azure;
+    height: 100vh;
+    padding-top: 30vh;
+    padding-left: 40vw;
+}
+
+.forgot__password__view .field__email{
+    width: 300px;
+    border-radius: 6px;
+    border-style: none;
 }
