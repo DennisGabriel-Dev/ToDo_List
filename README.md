@@ -5,8 +5,8 @@
 ## In this project I use database:
 * PostgreSQL and PgAdmin4
 
-## For execute this project or download it:
-1. Clone this repository:<br>
+## For execute this project:
+1. Clone this repository or download it:<br>
     ```git clone https://github.com/DennisGabriel-Dev/ToDo_List.git```
 
 2. Enter the repository cloned:<br>
