@@ -1,24 +1,29 @@
-# README
+# TO DO Rails
+* Ruby version -> 3.2.2
+* Rails version -> 7.0.7.2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## In this project I use database:
+* PostgreSQL and PgAdmin4
 
-Things you may want to cover:
+## For execute this project or download it:
+1. Clone this repository:<br>
+    ```git clone https://github.com/DennisGabriel-Dev/ToDo_List.git```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+2. Enter the repository cloned:<br>
+    ```cd ToDo_List```
+3. Enter in config/database.yml and configure with in your credentials
+only change this fields: <br>
+```
+default: &default
+  ...
+  username: postgres   #your postgres' username
+  password: root       #your postgres' password
+  ...
+```
+4. Create database and migrate data:<br>
+    ```rake db:create```<br>
+    ```rake db:migrate```<br>
+    Enter in your PgAdmin4 to see the database flux <br>
+    The name database created was: `todo_dev`
+5. And Finally: <br>
+  ```rails s```
