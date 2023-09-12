@@ -110,7 +110,7 @@
 }
 
 
-/*TASK NEW*/
+/*TASK NEW AND TASK EDIT*/
 .tasks__new__title{
     font-family: 'Courier New', Courier, monospace;
 }
@@ -130,6 +130,8 @@
     border-radius: 8px;
     padding: 5px;
 }
+
+
 /*USERS*/
 
 /*Login Users*/
